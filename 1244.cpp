@@ -34,8 +34,9 @@ int main() {
     string input;
     int n;
     cin >> n;
+    cin.ignore();
     for(int i = 0; i < n; i++){
-        cin >> input;
+        getline(cin, input);
         vector<string> resultado = separarStringPorEspaco(input);
     
         // Ordenar as partes pelo tamanho em ordem decrescente usando Selection Sort
